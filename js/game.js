@@ -47,7 +47,7 @@ export default class Game {
         card.style.backgroundImage = card.getAttribute("data-image");
         this.#clickTimes++;
         this.#clickedCards.push(card);
-        if(this.#clickTimes == 2) {
+        if(this.#clickTimes == 2 && this.#clickedCards[0].id != this.#clickedCards[1].id) {
             this.#clickable = false;
 
             if(this.#clickedCards[0].getAttribute("data-image") == this.#clickedCards[1].getAttribute("data-image")) {
