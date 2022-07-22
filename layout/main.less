@@ -1,0 +1,28 @@
+.main-container {
+    display: none; // default
+    .content {
+        .menu-content();
+        .kun-cards {
+            display: grid;
+            grid-template-rows: 100px 100px 100px 100px;
+            grid-template-columns: 100px 100px 100px 100px;
+            width: 400px;
+            height: 400px;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 30px;
+            border: 1px solid #4b4b4b;
+            .kun-card {
+                border: 1px solid #d6d6d6;
+                cursor: pointer;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .kun-card.success {
+                background-image: none !important;
+                background-color: #4fdf57;
+            }
+        }
+    }
+}

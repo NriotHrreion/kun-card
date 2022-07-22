@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kun Card</title>
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <script src="https://unpkg.com/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet/less" type="text/css" href="./layout/layout.less">
+    <script>
+        less = {
+            env: "development",
+            async: false,
+            fileAsync: false,
+            poll: 1000,
+            functions: {},
+            dumpLineNumbers: "comments",
+        };
+    </script>
+    <script src="https://unpkg.com/less@4.1.3/dist/less.min.js"></script>
+</head>
+<body>
+    <div class="start-menu" id="start-menu">
+        <div class="content">
+            <header>
+                <h1>坤坤卡片游戏</h1>
+                <p>By NriotHrreion</p>
+            </header>
+
+            <div class="btn-group">
+                <button class="btn btn-primary btn-lg" id="start-game-button">开始游戏</button>
+                <button class="btn btn-primary btn-lg" id="about-menu-button">关于</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-container" id="main-menu">
+        <div class="content">
+            <div class="kun-cards"></div>
+            <div class="board-container">
+                <p>分数: <span id="score">0</span></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-container" id="about-menu">
+        <div class="content">
+            <h1>关于</h1>
+            <p>瞎搞的项目</p>
+            <p>Github Repo: <a href="https://github.com/NriotHrreion/kun-card">https://github.com/NriotHrreion/kun-card</a></p>
+
+            <button class="btn btn-success btn-lg" id="back-button">返回</button>
+        </div>
+    </div>
+
+    <script src="./js/main.js" type="module"></script>
+</body>
+</html>
