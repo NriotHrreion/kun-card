@@ -42,6 +42,8 @@ export default class Game {
         if(!this.#clickable || this.#clickTimes > 2) return;
 
         const card = $("#"+ cardId);
+        if(card.classList.contains("success")) return;
+
         card.style.backgroundImage = card.getAttribute("data-image");
         this.#clickTimes++;
         this.#clickedCards.push(card);
