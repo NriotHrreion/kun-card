@@ -1,5 +1,7 @@
 # 坤坤卡片游戏
 
+## `This Repo Has Been Archived`
+
 By NriotHrreion
 
 ## 简介
